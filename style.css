@@ -1,0 +1,528 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.text-right{
+	text-align: right;
+}
+.text-left{
+	text-align: left;
+
+}
+.text-center{
+	text-align: center;
+}
+.clear::after{
+	content:"";
+	clear: both;
+	display: block;
+}
+.left{
+	float:  left;
+
+}
+.right{
+	float: right;
+}
+img{
+	max-width: 100%;
+}
+.content{
+	max-width: 1300px;
+	margin:auto;
+}
+
+/*start */
+.heder{
+	background: #fff;
+	border: 1px solid #ddd;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+}
+.logo{
+	width: 30%;
+}
+.logo img{
+	height: 50px;
+	float: left;
+	margin: 15px 10px;
+}
+.logo span{
+display: inline-block;
+margin-top: 25px;
+font-size: 20px;
+}
+.logo span:hover{
+	color: #adb5bd;
+}
+
+.manu{
+	width: 60%;
+
+}
+.manu ul{
+
+
+}
+.manu ul li{
+	display: inline-block;
+	}
+.manu ul li a {
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    line-height: 73px;
+    padding: 0 30px;
+    color: #333;
+}
+.manu ul li{
+position: relative;
+}
+.manu ul li ul{
+position: absolute;
+left: 0;
+top: 100%;
+width: 100px;
+background:#fff;
+opacity: 0;
+visibility:hidden;
+transition:.5s;
+transform: scaleY(0);
+transform-origin: top center;
+
+}
+.manu ul li ul li a {
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 17px;
+    line-height: 43px;
+    padding: 0 21px;
+    color: #333;
+}
+.manu ul li:hover ul{
+	opacity: 1;
+	visibility: visible;
+transform: scaleY(1);
+}
+
+
+.buton a{
+    text-decoration: none;
+    padding: 7px 15px;
+    border: 2px solid blue;
+    color: blue;
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: block;
+}
+.buton a:hover{
+background:#4263eb;
+border:1px solid #4263eb ;
+color: #fff;
+transition: .4s;
+font-weight: bold;
+box-shadow:1px 1px 4px 2px #868e96;
+
+}
+.banner{
+background: url(img/mbr-4.jpg) no-repeat center center;
+background-size: cover;
+padding: 150px 0;
+position: relative;
+z-index: 9;
+margin-top: 81px;
+}
+.banner::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: rgb(0,0,0,.4);
+	z-index:-1;
+}
+
+
+
+.b-content{
+	text-align: center;
+	color: #fff;
+	
+}
+.b-content h3 {
+    font-size: 29px;
+    font-weight: 20;
+    margin-bottom: 20px;
+}
+.b-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+.btn {
+    color: #868e96;
+    background: #fff;
+    padding: 15px 30px;
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 24px 2px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.btn:hover{
+background:#4263eb;
+color: #fff;
+transition: .4s;
+font-weight: bold;
+
+text-transform: capitalize;
+}
+.video-secyion{
+	margin: 30px 20px;
+}
+.main-video{
+	width: 48%;
+
+}
+.main-content{
+	width: 48%;
+	margin: 13px;
+}
+.main-content h1 {
+    font-size: 53px;
+    font-weight: 1;
+    margin-bottom: 20px;
+}
+.main-content p {
+    font-size: 25px;
+}
+.con-sec {
+    margin: 75px 0;
+    text-align: center;
+}
+.con-sec h1 {
+    font-size: 65px;
+}
+.con-sec h3 {
+    font-size: 30px;
+    margin: 10px;
+    font-weight: 1;
+}
+.servic{
+	margin: 20px 140px;
+}
+.service {
+    width: 31%;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 8px 3px RGB(136, 192, 208);
+}
+.service p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.service h3 {
+    font-size: 34px;
+    margin: 10px 0 0 0;
+}
+.service span {
+    font-size: 50px;
+    margin: 0 10px;
+    float: left;
+    height: 150px;
+}
+/*work*/
+.work-title {
+    text-align: center;
+    margin: 70px 0;
+}
+.work-title h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+.work-title h5 {
+    font-size: 25px;
+    font-weight: 1;
+    margin-top: 13px;
+}
+.work{
+	background-color:#e9ecef;
+}
+.work-1 {
+    width: 24%;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 8px 1px blue;
+    background-color: #fff;
+    margin: 80px 0px 20px 100px;
+}
+.work-item {
+    border-bottom: 1px solid;
+    padding: 22px;
+}
+.work-item h2 {
+    font-size: 30px;
+    font-weight: 1;
+    margin-bottom: 20px;
+}
+.work-item h3 {
+    font-size: 25px;
+    font-weight: 1;
+    margin-bottom: 20px;
+}
+.work-item h1 {
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+.work-item p {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.work-item-1{
+
+}
+.work-item-1 ul{}
+.work-item-1 ul li {
+    list-style: none;
+    font-size: 25px;
+    padding: 10px;
+    margin-left: 30px;
+}
+.work-item-1 ul li span {
+    font-size: 18px;
+    color: blue;
+}
+.btn-last {
+    text-align: center;
+}
+.work-1:hover .work-item{
+	background-color:blue;
+}
+.work-1:hover .btn-last .btn{
+	background-color:blue;
+}
+/*team*/
+.team{
+	margin: 30px 0;
+}
+.team-com {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 23px;
+}
+.team-com-1 {
+    text-align: center;
+    margin: 50px 0 0 188px;
+}
+.member{
+	width: 20%;
+}
+.member-bio{}
+.member-bio h2{}
+.member-bio p{}
+
+
+.newslatter{
+margin: 40px 0;
+background-color: #edf2ff;
+padding: 60px 0;
+}
+.news-content {
+    margin: 58px 0 30px 0;
+}
+.news-content h3 {
+    font-size: 22px;
+    font-weight: 1;
+    margin-bottom: 25px;
+}
+.news-content h1{
+	font-size: 45px;
+}
+.news-form{}
+.n-f {
+    border: 1px solid gray;
+    padding: 10px 25px 10px 16px;
+    font-size: 25px;
+    color: gray;
+    text-transform: capitalize;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 35px;
+}
+ button{
+    padding: 10px 25px 10px 16px;
+    font-size: 25px;
+    border-radius: 5px;
+    background: blue;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+}
+/**/
+.reporting {
+    margin: 100px 0;
+}
+.r-con {
+    padding: 10px;
+    margin: 50px 0;
+}
+.r-new {
+    width: 50%;
+}
+.r-new h2 {
+    font-size: 60px;
+    margin-left: 20px;
+}
+.r-pragrap {
+    width: 50%;
+}
+.r-pragrap p {
+    font-size: 25px;
+    color: gray;
+    text-align: justify;
+    margin: 0px 40px;
+}
+.r-base {
+    margin: 0 20px;
+}
+.r-img {
+    width: 45%;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    box-sizing: border-box;
+}
+.r-img img {
+    float: left;
+    width: 319px;
+    margin-right: 17px;
+}
+.r-img-con {
+    margin: 0 27px;
+}
+.r-img-con h3 {
+    font-size: 25px;
+    padding: 24px;
+}
+.r-img-con p {
+    font-size: 22px;
+}
+/**/
+.user{
+	margin: 50px 0;
+}
+.user-title{
+	text-align: center;
+	margin: 60px 0;
+}
+.user-title h3{
+	font-size: 30px;
+	font-weight: 1;
+	margin-bottom: 10px;
+}
+.user-title h1{
+		font-size: 30px;
+	margin-bottom: 10px;
+}
+.user-content {
+    width: 32%;
+}
+.user-team-con {
+    box-shadow: 1px 1px 1px 1px gray;
+    margin-left: 56px;
+    background: blue;
+    margin-bottom: 60px;
+    position: relative;
+}
+.user-team-con::after{
+	content: "";
+	position: absolute;
+	bottom: -21;
+	left: 0;
+	right: 0;
+	margin: auto;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 21px 25px 0 25px;
+    border-color: #6980fe transparent transparent transparent;
+}
+.user-team-con p {
+    font-size: 26px;
+    font-weight: 1;
+    padding: 35px;
+    color: #fff;
+
+    position:relative;
+
+}
+.user-team-con p::before {
+    content: "\f10d";
+    font-family: FontAwesome;
+    font-size: 71px;
+    position: absolute;
+    opacity: 0.25;
+    top: 10px;
+    left: 10px;
+}
+.user-team{}
+.user-team img {
+    float: left;
+    border-radius: 50%;
+    width: 99px;
+    margin-left: 124px;
+    margin-right: 20px;
+}
+.user-team h3 {
+    margin: 11px 0 10px 10px;
+    display: inline-block;
+    font-size: 17px;
+}
+.user-team p {
+    color: gray;
+    margin: 0px 0 10px 10px;
+    display: inline-block;
+}
+/**/
+.map-form {
+    padding: 100px 0;
+    margin: 0 55px;
+}
+.m-f {
+    padding: 20px;
+}
+.map{
+	width: 48%;
+}
+.form-optiom{
+	width: 48%;
+}
+.form-optiom h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.form-optiom p {
+    font-size: 25px;
+    margin-bottom: 60px;
+}
+.form-optiom a{}
+.form-optiom .w100{
+    width: 100%;
+}
+.form-optiom .w50{
+    width: 48%;
+}
+.fotter{
+    margin-top: 40px;
+}
+.fotter p {
+    font-size: 25px;
+    color: gray;
+}
